@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Mi Primera App</string>
+    <string name="user_list_title">Lista de Usuarios</string>
+    <string name="user_count_default">Total usuarios: 0</string>
+    <string name="user_count">Total usuarios: %1$d</string>
+    <string name="add_user">Agregar Usuario</string>
+    <string name="add_user_coming_soon">Agregar usuario próximamente</string>
+    <string name="user_detail_title">Detalle del Usuario</string>
+    <string name="user_id">ID: %1$d</string>
+    <string name="user_name">Nombre: %1$s</string>
+    <string name="user_email">Email: %1$s</string>
+    <string name="user_age">Edad: %1$d años</string>
+    <string name="user_age_value">%1$d años</string>
+    <string name="back_to_list">Volver a la Lista</string>
+    <string name="generated_user_name">Usuario Nuevo %1$d</string>
+    <string name="generated_user_email">nuevo%1$d@example.com</string>
 </resources>
