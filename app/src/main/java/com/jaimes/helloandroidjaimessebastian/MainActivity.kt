@@ -1,15 +1,24 @@
 package com.jaimes.helloandroidjaimessebastian
 
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.jaimes.helloandroidjaimessebastian.viewmodel.UserViewModel
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupActionBarWithNavController
 
 class MainActivity : AppCompatActivity() {
-    private val viewModel: UserViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val navHost = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        setupActionBarWithNavController(navHost.navController)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navHost = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        return navHost.navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
